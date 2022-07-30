@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="./favicon.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/27d79cf26d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!--=== HEADER === -->
+    <div id="header">
+      <!-- container -->
+      <div class="container">
+        <!-- row -->
+        <div class="row">
+          <!-- LOGO -->
+          <div class="col-md-3" id="header-logo">
+            <div class="header-logo">
+              <a href="/" class="logo">
+                <img
+                  class="header_logo--img"
+                  src="/images/horizontal.png"
+                  alt="logo store"
+                />
+              </a>
+            </div>
+          </div>
+          <!-- /LOGO -->
+          <!-- SEARCH BAR -->
+          <div class="col-md-6" id="header-search">
+            <div class="header-search">
+              <form method="get" action="/vi/Home/ViewBySearchProduct">
+                <input
+                  type="text"
+                  name="keyword"
+                  class="input"
+                  placeholder="Search here"
+                  style="border-radius: 20px 0px 0px 20px"
+                />
+                <button type="submit" class="search-btn">Find</button>
+              </form>
+            </div>
+          </div>
+          <!-- /SEARCH BAR -->
+          <!-- ACCOUNT -->
+          <div class="col-md-3 clearfix">
+            <div class="header-ctn">
+              <!-- Cart -->
+              <div class="dropdown">
+                <a href="/vi/cart">
+                  <i class="fa fa-shopping-cart"></i>
+                  <span>Cart</span>
+                  <div class="qty" id="lbl_number_of_items_header">0</div>
+                </a>
+              </div>
+            </div>
+            <!-- /Cart -->
+          </div>
+        </div>
+        <!-- /ACCOUNT -->
+      </div>
+      <!-- row -->
+    </div>
+
+    <!--=== HEADER === -->
+    <nav id="navigation">
+      <!-- container -->
+      <div class="container" id="navigation-menu">
+        <!-- responsive-nav -->
+        <div id="responsive-nav">
+          <!-- NAV -->
+          <ul class="main-nav nav navbar-nav">
+            <li class="active" style="background-color: #3399ff">
+              <a href="/">Homepage</a>
+            </li>
+            <li>
+              <a style="color: white" href="./products.html">Product</a>
+            </li>
+            <li>
+              <a
+                style="color: white"
+                href="https://ngotrieuhao.github.io/portfoliohtmljs/?fbclid=IwAR0lCPcJpPBgzud_wi12KXrTQF3ooqZ31uEV8X6c9phUjd5ZnYn-W07CWMY"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a style="color: white" href="./promotion.html">Promotion</a>
+            </li>
+          </ul>
+
+          <ul class="main-nav nav navbar-nav" style="float: right">
+            <li><a style="color: white" href="./login.html">Login</a></li>
+            <li>
+              <a style="color: white" href="./register.html">Register</a>
+            </li>
+          </ul>
+          <!-- /NAV -->
+        </div>
+        <!-- /responsive-nav -->
+      </div>
+      <!-- /container -->
+    </nav>
+
+    <div class="section" style="margin-top: 2rem">
+      <!-- container -->
+      <div class="container">
+        <!-- row -->
+        <div class="row" id="banner_logo--img">
+          <div class="slideshow-container">
+            <div class="mySlides" style="display: none">
+              <img src="/images/banner 1.jpg" style="width: 100%" />
+            </div>
+            <div class="mySlides" style="display: none">
+              <img src="/images/banner 2.png" style="width: 100%" />
+            </div>
+            <div class="mySlides" style="display: block">
+              <img src="/images/banner 3.png" style="width: 100%" />
+            </div>
+          </div>
+          <br />
+          <div style="text-align: center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot active"></span>
+          </div>
+          <!-- /shop -->
+        </div>
+        <!-- /row -->
+      </div>
+      <!-- /container -->
+    </div>
+
+    <!-- === FEATURES PRODUCT === -->
+    <div class="section" style="margin-top: 4rem">
+      <!-- container -->
+      <div class="container">
+        <!-- row -->
+        <div class="row" id="features_product--items">
+          <!-- section title -->
+          <div class="col-md-12">
+            <div class="section-title" style="text-align: center">
+              <h3 class="title">Featured Products</h3>
+            </div>
+          </div>
+          <!-- /section title -->
+          <!-- Products tab & slick -->
+          <div class="col-md-12">
+            <div class="row">
+              <div class="products-tabs">
+                <!-- tab -->
+                <div id="tab1" class="tab-pane active">
+                  <div
+                    class="products-slick slick-initialized slick-slider"
+                    data-nav="#slick-nav-1"
+                  >
+                    <!-- product -->
+
+                    <!-- /product -->
+                    <div class="slick-list draggable">
+                      <div class="slick-track">
+                        <div
+                          class="product slick-slide slick-cloned"
+                          id="product_item--1"
+                          tabindex="-1"
+                          data-slick-index="-4"
+                          aria-hidden="true"
+                        >
+                          <div class="product-img">
+                            <a
+                              class="product__img--items"
+                              href="/vi/san-pham/5"
+                              tabindex="-1"
+                            >
+                              <img
+                                src="https://localhost:5001/user-content/f91893ce-c0ac-480e-bc50-f9c6c4575519.jpg"
+                                alt="Nike Dunk High"
+                                class="product_img--items"
+                              />
+                            </a>
+                            <div class="product-label">
+                              <span class="new">New</span>
+                            </div>
+                          </div>
+                          <div class="add-to-cart">
+                            <button
+                              class="add-to-cart-btn"
+                              data-id="5"
+                              tabindex="-1"
+                            >
+                              <i class="fa fa-shopping-cart"></i> Add to Cart
+                            </button>
+                          </div>
+                          <div class="caption">
+                            <h5 class="caption_text--h5">Nike Dunk High</h5>
+                            <h4 class="caption_text--h4">
+                              <span class="pull-right">$230,00</span>
+                            </h4>
+                          </div>
+                        </div>
+                        <div
+                          class="product slick-slide slick-cloned"
+                          id="product_item--2"
+                          tabindex="-1"
+                          data-slick-index="-3"
+                          aria-hidden="true"
+                        >
+                          <div class="product-img">
+                            <a
+                              style="height: 214px"
+                              href="/vi/san-pham/6"
+                              tabindex="-1"
+                            >
+                              <img
+                                class="product_img--items"
+                                src="https://localhost:5001/user-content/921fbd2f-e220-4b39-8f3e-0fa00718a688.jpg"
+                                alt="Velocity NITRO 2 Men's"
+                              />
+                            </a>
+                            <div class="product-label">
+                              <span class="new">New</span>
+                            </div>
+                          </div>
+                          <div class="add-to-cart">
+                            <button
+                              class="add-to-cart-btn"
+                              data-id="6"
+                              tabindex="-1"
+                            >
+                              <i class="fa fa-shopping-cart"></i> Add to Cart
+                            </button>
+                          </div>
+                          <div class="caption">
+                            <h5 class="caption_text--h5">
+                              Velocity NITRO 2 Men's
+                            </h5>
+                            <h4 class="caption_text--h4">
+                              <span class="pull-right">$120,00</span>
+                            </h4>
+                          </div>
+                        </div>
+                        <div
+                          class="product slick-slide slick-cloned"
+                          id="product_item--3"
+                          tabindex="-1"
+                          data-slick-index="-2"
+                          aria-hidden="true"
+                        >
+                          <div class="product-img">
+                            <a
+                              style="height: 214px"
+                              href="/vi/san-pham/7"
+                              tabindex="-1"
+                            >
+                              <img
+                                class="product_img--items"
+                                src="https://localhost:5001/user-content/dbfe30b7-a5c6-48e5-b90d-191b3e0b611c.jpg"
+                                alt="RACER TR21 WIDE"
+                              />
+                            </a>
+                            <div class="product-label">
+                              <span class="new">New</span>
+                            </div>
+                          </div>
+                          <div class="add-to-cart">
+                            <button
+                              class="add-to-cart-btn"
+                              data-id="7"
+                              tabindex="-1"
+                            >
+                              <i class="fa fa-shopping-cart"></i> Add to Cart
+                            </button>
+                          </div>
+                          <div class="caption">
+                            <h5 class="caption_text--h5">RACER TR21 WIDE</h5>
+                            <h4 class="caption_text--h4">
+                              <span class="pull-right">$50,00</span>
+                            </h4>
+                          </div>
+                        </div>
+                        <div
+                          class="product slick-slide slick-cloned"
+                          id="product_item--4"
+                          tabindex="-1"
+                          data-slick-index="-1"
+                          aria-hidden="true"
+                        >
+                          <div class="product-img">
+                            <a
+                              style="height: 214px"
+                              href="/vi/san-pham/8"
+                              tabindex="-1"
+                            >
+                              <img
+                                class="product_img--items"
+                                src="https://localhost:5001/user-content/82507479-4959-4b0d-9724-c236b6283045.jpg"
+                                alt="Clyde Core Foil Men's"
+                              />
+                            </a>
+                            <div class="product-label">
+                              <span class="new">New</span>
+                            </div>
+                          </div>
+                          <div class="add-to-cart">
+                            <button
+                              class="add-to-cart-btn"
+                              data-id="8"
+                              tabindex="-1"
+                            >
+                              <i class="fa fa-shopping-cart"></i> Add to Cart
+                            </button>
+                          </div>
+                          <div class="caption">
+                            <h5 class="caption_text--h5">
+                              Clyde Core Foil Men's
+                            </h5>
+                            <h4 class="caption_text--h4">
+                              <span class="pull-right">$70,00</span>
+                            </h4>
+                          </div>
+                        </div>
+
+                        <div
+                          class="product slick-slide"
+                          tabindex="-1"
+                          data-slick-index="3"
+                          aria-hidden="true"
+                        >
+                          <div class="product-img">
+                            <a
+                              style="height: 214px"
+                              href="/vi/san-pham/4"
+                              tabindex="-1"
+                            >
+                              <img
+                                class="product_img--items"
+                                height="214"
+                                src="https://localhost:5001/user-content/4f2197f3-bc0b-4aab-bd82-382dda008aa4.jpg"
+                                alt="Nike Air Force 1"
+                              />
+                            </a>
+                            <div class="product-label">
+                              <span class="new">New</span>
+                            </div>
+                          </div>
+                          <div class="add-to-cart">
+                            <button
+                              class="add-to-cart-btn"
+                              data-id="4"
+                              tabindex="-1"
+                            >
+                              <i class="fa fa-shopping-cart"></i> Add to Cart
+                            </button>
+                          </div>
+                          <div class="caption">
+                            <h5 class="caption_text--h5">Nike Air Force 1</h5>
+                            <h4 class="caption_text--h4">
+                              <span class="pull-right">$100,00</span>
+                            </h4>
+                          </div>
+                        </div>
+                        <div
+                          class="product slick-slide"
+                          tabindex="-1"
+                          data-slick-index="4"
+                          aria-hidden="true"
+                        >
+                          <div class="product-img">
+                            <a
+                              style="height: 214px"
+                              href="/vi/san-pham/5"
+                              tabindex="-1"
+                            >
+                              <img
+                                class="product_img--items"
+                                height="214"
+                                src="https://localhost:5001/user-content/f91893ce-c0ac-480e-bc50-f9c6c4575519.jpg"
+                                alt="Nike Dunk High"
+                              />
+                            </a>
+                            <div class="product-label">
+                              <span class="new">New</span>
+                            </div>
+                          </div>
+                          <div class="add-to-cart">
+                            <button
+                              class="add-to-cart-btn"
+                              data-id="5"
+                              tabindex="-1"
+                            >
+                              <i class="fa fa-shopping-cart"></i> Add to Cart
+                            </button>
+                          </div>
+                          <div class="caption">
+                            <h5 class="caption_text--h5">Nike Dunk High</h5>
+                            <h4 class="caption_text--h4">
+                              <span class="pull-right">$230,00</span>
+                            </h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /tab -->
+              </div>
+            </div>
+          </div>
+          <!-- Products tab & slick -->
+        </div>
+        <!-- /row -->
+      </div>
+      <!-- /container -->
+    </div>
+
+    <!--=== HOT-DEAL === -->
+    <div id="hot-deal" class="section">
+      <!-- container -->
+      <img class="hot_deal--image" src="./images/banner4.png" />
+      <div class="btn-deal">
+        <a
+          class="primary-btn cta-btn"
+          href="https://localhost:44377/vi/san-pham/4"
+          >Buy now</a
+        >
+      </div>
+      <!-- /container -->
+    </div>
+
+    <!-- === FEATURES PRODUCT === -->
+    <div class="section" style="margin-top: 4rem">
+      <!-- container -->
+      <div class="container">
+        <!-- row -->
+        <div class="row" id="features_product--items">
+          <!-- section title -->
+          <div class="col-md-12">
+            <div class="section-title" style="text-align: center">
+              <h3 class="title">Featured Products</h3>
+            </div>
+          </div>
+          <!-- /section title -->
+          <!-- Products tab & slick -->
+          <div class="col-md-12">
+            <div class="row">
+              <div class="products-tabs">
+                <!-- tab -->
+                <div id="tab1" class="tab-pane active">
+                  <div
+                    class="products-slick slick-initialized slick-slider"
+                    data-nav="#slick-nav-1"
+                  >
+                    <!-- product -->
+
+                    <!-- /product -->
+                    <div class="slick-list draggable">
+                      <div class="slick-track">
+                        <div
+                          class="product slick-slide slick-cloned"
+                          id="product_item--1"
+                          tabindex="-1"
+                          data-slick-index="-4"
+                          aria-hidden="true"
+                        >
+                          <div class="product-img">
+                            <a
+                              class="product__img--items"
+                              href="/vi/san-pham/5"
+                              tabindex="-1"
+                            >
+                              <img
+                                src="https://localhost:5001/user-content/f91893ce-c0ac-480e-bc50-f9c6c4575519.jpg"
+                                alt="Nike Dunk High"
+                                class="product_img--items"
+                              />
+                            </a>
+                            <div class="product-label">
+                              <span class="new">New</span>
+                            </div>
+                          </div>
+                          <div class="add-to-cart">
+                            <button
+                              class="add-to-cart-btn"
+                              data-id="5"
+                              tabindex="-1"
+                            >
+                              <i class="fa fa-shopping-cart"></i> Add to Cart
+                            </button>
+                          </div>
+                          <div class="caption">
+                            <h5 class="caption_text--h5">Nike Dunk High</h5>
+                            <h4 class="caption_text--h4">
+                              <span class="pull-right">$230,00</span>
+                            </h4>
+                          </div>
+                        </div>
+                        <div
+                          class="product slick-slide slick-cloned"
+                          id="product_item--2"
+                          tabindex="-1"
+                          data-slick-index="-3"
+                          aria-hidden="true"
+                        >
+                          <div class="product-img">
+                            <a
+                              style="height: 214px"
+                              href="/vi/san-pham/6"
+                              tabindex="-1"
+                            >
+                              <img
+                                class="product_img--items"
+                                src="https://localhost:5001/user-content/921fbd2f-e220-4b39-8f3e-0fa00718a688.jpg"
+                                alt="Velocity NITRO 2 Men's"
+                              />
+                            </a>
+                            <div class="product-label">
+                              <span class="new">New</span>
+                            </div>
+                          </div>
+                          <div class="add-to-cart">
+                            <button
+                              class="add-to-cart-btn"
+                              data-id="6"
+                              tabindex="-1"
+                            >
+                              <i class="fa fa-shopping-cart"></i> Add to Cart
+                            </button>
+                          </div>
+                          <div class="caption">
+                            <h5 class="caption_text--h5">
+                              Velocity NITRO 2 Men's
+                            </h5>
+                            <h4 class="caption_text--h4">
+                              <span class="pull-right">$120,00</span>
+                            </h4>
+                          </div>
+                        </div>
+                        <div
+                          class="product slick-slide slick-cloned"
+                          id="product_item--3"
+                          tabindex="-1"
+                          data-slick-index="-2"
+                          aria-hidden="true"
+                        >
+                          <div class="product-img">
+                            <a
+                              style="height: 214px"
+                              href="/vi/san-pham/7"
+                              tabindex="-1"
+                            >
+                              <img
+                                class="product_img--items"
+                                src="https://localhost:5001/user-content/dbfe30b7-a5c6-48e5-b90d-191b3e0b611c.jpg"
+                                alt="RACER TR21 WIDE"
+                              />
+                            </a>
+                            <div class="product-label">
+                              <span class="new">New</span>
+                            </div>
+                          </div>
+                          <div class="add-to-cart">
+                            <button
+                              class="add-to-cart-btn"
+                              data-id="7"
+                              tabindex="-1"
+                            >
+                              <i class="fa fa-shopping-cart"></i> Add to Cart
+                            </button>
+                          </div>
+                          <div class="caption">
+                            <h5 class="caption_text--h5">RACER TR21 WIDE</h5>
+                            <h4 class="caption_text--h4">
+                              <span class="pull-right">$50,00</span>
+                            </h4>
+                          </div>
+                        </div>
+                        <div
+                          class="product slick-slide slick-cloned"
+                          id="product_item--4"
+                          tabindex="-1"
+                          data-slick-index="-1"
+                          aria-hidden="true"
+                        >
+                          <div class="product-img">
+                            <a
+                              style="height: 214px"
+                              href="/vi/san-pham/8"
+                              tabindex="-1"
+                            >
+                              <img
+                                class="product_img--items"
+                                src="https://localhost:5001/user-content/82507479-4959-4b0d-9724-c236b6283045.jpg"
+                                alt="Clyde Core Foil Men's"
+                              />
+                            </a>
+                            <div class="product-label">
+                              <span class="new">New</span>
+                            </div>
+                          </div>
+                          <div class="add-to-cart">
+                            <button
+                              class="add-to-cart-btn"
+                              data-id="8"
+                              tabindex="-1"
+                            >
+                              <i class="fa fa-shopping-cart"></i> Add to Cart
+                            </button>
+                          </div>
+                          <div class="caption">
+                            <h5 class="caption_text--h5">
+                              Clyde Core Foil Men's
+                            </h5>
+                            <h4 class="caption_text--h4">
+                              <span class="pull-right">$70,00</span>
+                            </h4>
+                          </div>
+                        </div>
+
+                        <div
+                          class="product slick-slide"
+                          tabindex="-1"
+                          data-slick-index="3"
+                          aria-hidden="true"
+                        >
+                          <div class="product-img">
+                            <a
+                              style="height: 214px"
+                              href="/vi/san-pham/4"
+                              tabindex="-1"
+                            >
+                              <img
+                                class="product_img--items"
+                                height="214"
+                                src="https://localhost:5001/user-content/4f2197f3-bc0b-4aab-bd82-382dda008aa4.jpg"
+                                alt="Nike Air Force 1"
+                              />
+                            </a>
+                            <div class="product-label">
+                              <span class="new">New</span>
+                            </div>
+                          </div>
+                          <div class="add-to-cart">
+                            <button
+                              class="add-to-cart-btn"
+                              data-id="4"
+                              tabindex="-1"
+                            >
+                              <i class="fa fa-shopping-cart"></i> Add to Cart
+                            </button>
+                          </div>
+                          <div class="caption">
+                            <h5 class="caption_text--h5">Nike Air Force 1</h5>
+                            <h4 class="caption_text--h4">
+                              <span class="pull-right">$100,00</span>
+                            </h4>
+                          </div>
+                        </div>
+                        <div
+                          class="product slick-slide"
+                          tabindex="-1"
+                          data-slick-index="4"
+                          aria-hidden="true"
+                        >
+                          <div class="product-img">
+                            <a
+                              style="height: 214px"
+                              href="/vi/san-pham/5"
+                              tabindex="-1"
+                            >
+                              <img
+                                class="product_img--items"
+                                height="214"
+                                src="https://localhost:5001/user-content/f91893ce-c0ac-480e-bc50-f9c6c4575519.jpg"
+                                alt="Nike Dunk High"
+                              />
+                            </a>
+                            <div class="product-label">
+                              <span class="new">New</span>
+                            </div>
+                          </div>
+                          <div class="add-to-cart">
+                            <button
+                              class="add-to-cart-btn"
+                              data-id="5"
+                              tabindex="-1"
+                            >
+                              <i class="fa fa-shopping-cart"></i> Add to Cart
+                            </button>
+                          </div>
+                          <div class="caption">
+                            <h5 class="caption_text--h5">Nike Dunk High</h5>
+                            <h4 class="caption_text--h4">
+                              <span class="pull-right">$230,00</span>
+                            </h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /tab -->
+              </div>
+            </div>
+          </div>
+          <!-- Products tab & slick -->
+        </div>
+        <!-- /row -->
+      </div>
+      <!-- /container -->
+    </div>
+
+    <section class="section" id="testimonial-famous">
+      <div class="section-title" style="text-align: center">
+        <h3 class="title">Testimonial</h3>
+      </div>
+      <div class="testimonial-center container">
+        <div class="testimonial ronaldo">
+          <span>“</span>
+          <p style="font-size: 15px; font-weight: bold">
+            I started using the web through a close friend. When using I find
+            this website easy to use and not flashy. I like the design of the
+            website because it looks very simple and easy to operate
+          </p>
+          <div class="img-cover">
+            <img src="./images/profile1.jpg" alt="" />
+          </div>
+          <h4>Cr.Ronaldo</h4>
+        </div>
+        <div class="testimonial messi">
+          <span>“</span>
+          <p style="font-size: 15px; font-weight: bold">
+            Besides that the website has catered all kinds of products for me, I
+            am also very pleased and satisfied with the quality of the product
+            and the product is very value for money
+          </p>
+          <div class="img-cover">
+            <img src="./images/profile2.jpg" alt="" />
+          </div>
+          <h4>L.Messi</h4>
+        </div>
+        <div class="testimonial beckham">
+          <span>“</span>
+          <p style="font-size: 15px; font-weight: bold">
+            Ease-of-use and flexibility is a reason to use this web. If you need
+            a web that can supply all sport items, get this one
+          </p>
+          <div class="img-cover">
+            <img src="./images/profile3.jpg" alt="" />
+          </div>
+          <h4>D.Beckham</h4>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="margin: 5rem 0">
+      <div class="brands-center container">
+        <div class="brand">
+          <img class="brand--icons" src="/images/brand1.png" alt="" />
+        </div>
+        <div class="brand">
+          <img class="brand--icons" src="/images/brand2.png" alt="" />
+        </div>
+        <div class="brand">
+          <img class="brand--icons" src="/images/brand3.png" alt="" />
+        </div>
+        <div class="brand">
+          <img class="brand--icons" src="/images/brand1.png" alt="" />
+        </div>
+        <div class="brand">
+          <img class="brand--icons" src="/images/brand2.png" alt="" />
+        </div>
+        <div class="brand">
+          <img class="brand--icons" src="/images/brand3.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <div id="newsletter" class="section"></div>
+
+    <!-- FOOTER -->
+    <footer class="container-fluid bg-dark py-5" id="footer">
+      <div class="footer-about">
+        <div class="logo-part">
+          <h6 class="footer__h4">HaoHao Store</h6>
+          <br />
+          <br />
+          <p>Facility 1: No. 142-146 Pham Phu Thu - Ward 4 - District 6</p>
+          <p>Facility 2: 205 Nguyen Xi, Ward 26, Binh Thanh</p>
+          <p>Phone: 028.7300.2266</p>
+          <p>Hotline: 0933.108.554 | 0971,294,545</p>
+        </div>
+      </div>
+      <div class="footer-address">
+        <h6 class="footer__h6">Address</h6>
+        <br />
+        <br />
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.873984461329!2d106.6420883144405!3d10.74419426272664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752e639bf01243%3A0x91e3ddf3263c7e5e!2zMTQyIFBo4bqhbSBQaMO6IFRo4bupLCBQaMaw4budbmcgNCwgUXXhuq1uIDYsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1614675996119!5m2!1svi!2s"
+          width="230"
+          height="200"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+      <div class="help-us">
+        <h6 class="footer__h6">Help us</h6>
+        <ul style="list-style-type: none; padding-left: 0">
+          <li style="margin-bottom: 10px"><a href="/"> Home</a></li>
+        </ul>
+        <ul style="list-style-type: none; padding-left: 0">
+          <li>
+            <a
+              href="https://ngotrieuhao.github.io/portfoliohtmljs/?fbclid=IwAR0lCPcJpPBgzud_wi12KXrTQF3ooqZ31uEV8X6c9phUjd5ZnYn-W07CWMY"
+            >
+              Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="social-network">
+        <h6 class="footer__h6" style="width: 14rem">Social Network</h6>
+        <div class="social">
+          <a class="social__icons" href="https://www.facebook.com/ngotrieuhao/">
+            <i class="fab fa-facebook fa-2x"></i>
+          </a>
+          <a class="social__icons" href="https://www.instagram.com/haro.ngoo/">
+            <i class="fab fa-instagram fa-2x" style="margin-left: 5px"></i
+          ></a>
+          <a class="social__icons" href="https://twitter.com/ngotrieuhao">
+            <i class="fab fa-twitter-square fa-2x" style="margin-left: 5px"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script -->
+    <script type="text/javascript" src="./index.js"></script>
+
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 3000); // Change image every 3 seconds
+      }
+    </script>
+  </body>
+</html>

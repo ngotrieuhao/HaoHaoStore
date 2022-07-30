@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="./favicon.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/27d79cf26d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/product.css" />
+  </head>
+  <body>
+    <!--=== HEADER === -->
+    <div id="header">
+      <!-- container -->
+      <div class="container">
+        <!-- row -->
+        <div class="row">
+          <!-- LOGO -->
+          <div class="col-md-3" id="header-logo">
+            <div class="header-logo">
+              <a href="/" class="logo">
+                <img
+                  class="header_logo--img"
+                  src="/images/horizontal.png"
+                  alt="logo store"
+                />
+              </a>
+            </div>
+          </div>
+          <!-- /LOGO -->
+          <!-- SEARCH BAR -->
+          <div class="col-md-6" id="header-search">
+            <div class="header-search">
+              <form method="get" action="/vi/Home/ViewBySearchProduct">
+                <input
+                  type="text"
+                  name="keyword"
+                  class="input"
+                  placeholder="Search here"
+                  style="border-radius: 20px 0px 0px 20px"
+                />
+                <button type="submit" class="search-btn">Find</button>
+              </form>
+            </div>
+          </div>
+          <!-- /SEARCH BAR -->
+          <!-- ACCOUNT -->
+          <div class="col-md-3 clearfix">
+            <div class="header-ctn">
+              <!-- Cart -->
+              <div class="dropdown">
+                <a href="/vi/cart">
+                  <i class="fa fa-shopping-cart"></i>
+                  <span>Cart</span>
+                  <div class="qty" id="lbl_number_of_items_header">0</div>
+                </a>
+              </div>
+            </div>
+            <!-- /Cart -->
+          </div>
+        </div>
+        <!-- /ACCOUNT -->
+      </div>
+      <!-- row -->
+    </div>
+
+    <!--=== HEADER === -->
+    <nav id="navigation">
+      <!-- container -->
+      <div class="container">
+        <!-- responsive-nav -->
+        <div id="responsive-nav">
+          <!-- NAV -->
+          <ul class="main-nav nav navbar-nav">
+            <li class="active" style="background-color: #3399ff">
+              <a href="./index.html">Homepage</a>
+            </li>
+            <li>
+              <a style="color: white" href="#">Product</a>
+            </li>
+            <li>
+              <a
+                style="color: white"
+                href="https://ngotrieuhao.github.io/portfoliohtmljs/?fbclid=IwAR0lCPcJpPBgzud_wi12KXrTQF3ooqZ31uEV8X6c9phUjd5ZnYn-W07CWMY"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a style="color: white" href="./promotion.html">Promotion</a>
+            </li>
+          </ul>
+
+          <ul class="main-nav nav navbar-nav" style="float: right">
+            <li><a style="color: white" href="./login.html">Login</a></li>
+            <li>
+              <a style="color: white" href="./register.html">Register</a>
+            </li>
+          </ul>
+          <!-- /NAV -->
+        </div>
+        <!-- /responsive-nav -->
+      </div>
+      <!-- /container -->
+    </nav>
+
+    <div id="breadcrumb" class="section">
+      <!-- container -->
+      <div class="container">
+        <!-- row -->
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="breadcrumb-tree">
+              <li><a href="./index.html">Homepage</a></li>
+              <li>Product</li>
+            </ul>
+          </div>
+        </div>
+        <!-- /row -->
+      </div>
+      <!-- /container -->
+    </div>
+
+    <div class="main-container col1-layout">
+      <div class="container">
+        <div class="row">
+          <div class="col-main col-sm-12 col-xs-12">
+            <div class="shop-inner">
+              <form method="get" action="/vi/Home/ViewByCategory">
+                <div class="toolbar column">
+                  <div class="sorter">
+                    <label>Sort:</label>
+                    <select name="sortOrder" onchange="this.form.submit()">
+                      <option>All</option>
+                      <option>Name A-Z</option>
+                      <option>Low to High price</option>
+                      <option>High to Low price</option>
+                    </select>
+                  </div>
+                </div>
+              </form>
+              <div class="product-grid-area">
+                <ul class="products-grid">
+                  <li class="item col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                    <div class="product-item">
+                      <div class="item-inner">
+                        <div class="product-thumbnail">
+                          <div class="icon-hot-label new-right">New</div>
+
+                          <div class="pr-img-area">
+                            <a
+                              title="Adidas ULTRABOOST 21"
+                              href="./productdetail.html"
+                            >
+                              <figure>
+                                <img
+                                  class="first-img"
+                                  src="https://localhost:5001/user-content/49b1f97e-979c-48d1-80f4-1bea4099ce3d.jpg"
+                                  alt="HTML template"
+                                />
+                                <img
+                                  class="hover-img"
+                                  src="https://localhost:5001/user-content/4e1558e1-abd8-475b-8ab3-8934a5ef5c25.jpg"
+                                  alt="HTML template"
+                                />
+                              </figure>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="item-info">
+                          <div class="info-inner">
+                            <div class="item-title">
+                              <a
+                                title="Adidas ULTRABOOST 21"
+                                href="/vi/san-pham/1"
+                                >Adidas ULTRABOOST 21
+                              </a>
+                            </div>
+                            <div class="item-content">
+                              <div class="item-price">
+                                <div class="price-box">
+                                  <span class="regular-price">
+                                    <span class="price">$250</span>
+                                  </span>
+                                </div>
+                              </div>
+                              <div class="pro-action">
+                                <button
+                                  type="button"
+                                  class="add-to-cart add-to-cart-btn"
+                                  data-id="1"
+                                >
+                                  <i class="fa fa-shopping-cart"></i>
+                                  <span> Add to Cart</span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="product-grid-area">
+                <ul class="products-grid">
+                  <li class="item col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                    <div class="product-item">
+                      <div class="item-inner">
+                        <div class="product-thumbnail">
+                          <div class="icon-hot-label new-right">New</div>
+
+                          <div class="pr-img-area">
+                            <a title="RACER TR21 WIDE" href="/vi/san-pham/7">
+                              <figure>
+                                <img
+                                  class="first-img"
+                                  src="https://localhost:5001/user-content/dbfe30b7-a5c6-48e5-b90d-191b3e0b611c.jpg"
+                                  alt="HTML template"
+                                />
+                                <img
+                                  class="hover-img"
+                                  src="https://localhost:5001/user-content/c5b54445-33f7-4d57-99fc-b873a922459a.jpg"
+                                  alt="HTML template"
+                                />
+                              </figure>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="item-info">
+                          <div class="info-inner">
+                            <div class="item-title">
+                              <a title="RACER TR21 WIDE" href="/vi/san-pham/7"
+                                >RACER TR21 WIDE
+                              </a>
+                            </div>
+                            <div class="item-content">
+                              <div class="item-price">
+                                <div class="price-box">
+                                  <span class="regular-price">
+                                    <span class="price">$50</span>
+                                  </span>
+                                </div>
+                              </div>
+                              <div class="pro-action">
+                                <button
+                                  type="button"
+                                  class="add-to-cart add-to-cart-btn"
+                                  data-id="7"
+                                >
+                                  <i class="fa fa-shopping-cart"></i>
+                                  <span> Add to Cart</span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="product-grid-area">
+                <ul class="products-grid">
+                  <li class="item col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                    <div class="product-item">
+                      <div class="item-inner">
+                        <div class="product-thumbnail">
+                          <div class="icon-hot-label new-right">New</div>
+
+                          <div class="pr-img-area">
+                            <a
+                              title="Continental 80 Stripes"
+                              href="/vi/san-pham/9"
+                            >
+                              <figure>
+                                <img
+                                  class="first-img"
+                                  src="https://localhost:5001/user-content/d56512a7-1709-4f3c-bbda-a15793c92c05.jpg"
+                                  alt="HTML template"
+                                />
+                                <img
+                                  class="hover-img"
+                                  src="https://localhost:5001/user-content/0a679fdb-184a-4be9-95b3-b7a0e4f371fa.jpg"
+                                  alt="HTML template"
+                                />
+                              </figure>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="item-info">
+                          <div class="info-inner">
+                            <div class="item-title">
+                              <a
+                                title="Continental 80 Stripes"
+                                href="/vi/san-pham/9"
+                                >Continental 80 Stripes
+                              </a>
+                            </div>
+                            <div class="item-content">
+                              <div class="item-price">
+                                <div class="price-box">
+                                  <span class="regular-price">
+                                    <span class="price">$140</span>
+                                  </span>
+                                </div>
+                              </div>
+                              <div class="pro-action">
+                                <button
+                                  type="button"
+                                  class="add-to-cart add-to-cart-btn"
+                                  data-id="9"
+                                >
+                                  <i class="fa fa-shopping-cart"></i>
+                                  <span> Add to Cart</span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="product-grid-area">
+                <ul class="products-grid">
+                  <li class="item col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                    <div class="product-item">
+                      <div class="item-inner">
+                        <div class="product-thumbnail">
+                          <div class="icon-hot-label new-right">New</div>
+
+                          <div class="pr-img-area">
+                            <a
+                              title="Adidas Futurecraft 4D Shoes"
+                              href="/vi/san-pham/10"
+                            >
+                              <figure>
+                                <img
+                                  class="first-img"
+                                  src="https://localhost:5001/user-content/4a116ea3-9a46-438b-9505-1b4cbe764788.jpg"
+                                  alt="HTML template"
+                                />
+                                <img
+                                  class="hover-img"
+                                  src="https://localhost:5001/user-content/2eb91d8e-9f8a-47b0-b896-5bcff4b47251.jpg"
+                                  alt="HTML template"
+                                />
+                              </figure>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="item-info">
+                          <div class="info-inner">
+                            <div class="item-title">
+                              <a
+                                title="Adidas Futurecraft 4D Shoes"
+                                href="/vi/san-pham/10"
+                                >Adidas Futurecraft 4D Shoes
+                              </a>
+                            </div>
+                            <div class="item-content">
+                              <div class="item-price">
+                                <div class="price-box">
+                                  <span class="regular-price">
+                                    <span class="price">$280</span>
+                                  </span>
+                                </div>
+                              </div>
+                              <div class="pro-action">
+                                <button
+                                  type="button"
+                                  class="add-to-cart add-to-cart-btn"
+                                  data-id="10"
+                                >
+                                  <i class="fa fa-shopping-cart"></i>
+                                  <span> Add to Cart</span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="product-grid-area">
+                <ul class="products-grid">
+                  <li class="item col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                    <div class="product-item">
+                      <div class="item-inner">
+                        <div class="product-thumbnail">
+                          <div class="icon-hot-label new-right">New</div>
+
+                          <div class="pr-img-area">
+                            <a
+                              title="Magnify Nitro Men's Running"
+                              href="/vi/san-pham/13"
+                            >
+                              <figure>
+                                <img
+                                  class="first-img"
+                                  src="https://localhost:5001/user-content/56d781f4-05b6-428c-9bd0-52117d9740a1.jpg"
+                                  alt="HTML template"
+                                />
+                                <img
+                                  class="hover-img"
+                                  src="https://localhost:5001/user-content/bc9f1fd9-d567-4762-80da-45538d4ef5c7.jpg"
+                                  alt="HTML template"
+                                />
+                              </figure>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="item-info">
+                          <div class="info-inner">
+                            <div class="item-title">
+                              <a
+                                title="Magnify Nitro Men's Running"
+                                href="/vi/san-pham/13"
+                                >Magnify Nitro Men's Running
+                              </a>
+                            </div>
+                            <div class="item-content">
+                              <div class="item-price">
+                                <div class="price-box">
+                                  <span class="regular-price">
+                                    <span class="price">$140</span>
+                                  </span>
+                                </div>
+                              </div>
+                              <div class="pro-action">
+                                <button
+                                  type="button"
+                                  class="add-to-cart add-to-cart-btn"
+                                  data-id="13"
+                                >
+                                  <i class="fa fa-shopping-cart"></i>
+                                  <span> Add to Cart</span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="product-grid-area">
+                <ul class="products-grid">
+                  <li class="item col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                    <div class="product-item">
+                      <div class="item-inner">
+                        <div class="product-thumbnail">
+                          <div class="icon-hot-label new-right">New</div>
+
+                          <div class="pr-img-area">
+                            <a
+                              title="Clyde Core Foil Men's"
+                              href="/vi/san-pham/8"
+                            >
+                              <figure>
+                                <img
+                                  class="first-img"
+                                  src="https://localhost:5001/user-content/82507479-4959-4b0d-9724-c236b6283045.jpg"
+                                  alt="HTML template"
+                                />
+                                <img
+                                  class="hover-img"
+                                  src="https://localhost:5001/user-content/67b216bf-b82f-40bb-a206-356d50142f31.jpg"
+                                  alt="HTML template"
+                                />
+                              </figure>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="item-info">
+                          <div class="info-inner">
+                            <div class="item-title">
+                              <a
+                                title="Clyde Core Foil Men's"
+                                href="/vi/san-pham/8"
+                                >Clyde Core Foil Men's
+                              </a>
+                            </div>
+                            <div class="item-content">
+                              <div class="item-price">
+                                <div class="price-box">
+                                  <span class="regular-price">
+                                    <span class="price">$70</span>
+                                  </span>
+                                </div>
+                              </div>
+                              <div class="pro-action">
+                                <button
+                                  type="button"
+                                  class="add-to-cart add-to-cart-btn"
+                                  data-id="8"
+                                >
+                                  <i class="fa fa-shopping-cart"></i>
+                                  <span> Add to Cart</span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="product-grid-area">
+                <ul class="products-grid">
+                  <li class="item col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                    <div class="product-item">
+                      <div class="item-inner">
+                        <div class="product-thumbnail">
+                          <div class="icon-hot-label new-right">New</div>
+
+                          <div class="pr-img-area">
+                            <a
+                              title="Eternity NITRO Men's Running"
+                              href="/vi/san-pham/14"
+                            >
+                              <figure>
+                                <img
+                                  class="first-img"
+                                  src="https://localhost:5001/user-content/fc25ade6-56b7-430d-8023-df5e155b60db.jpg"
+                                  alt="HTML template"
+                                />
+                                <img
+                                  class="hover-img"
+                                  src="https://localhost:5001/user-content/ef036cbf-9b8c-4141-8459-73b9a0c8a3ab.jpg"
+                                  alt="HTML template"
+                                />
+                              </figure>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="item-info">
+                          <div class="info-inner">
+                            <div class="item-title">
+                              <a
+                                title="Eternity NITRO Men's Running"
+                                href="/vi/san-pham/14"
+                                >Eternity NITRO Men's Running
+                              </a>
+                            </div>
+                            <div class="item-content">
+                              <div class="item-price">
+                                <div class="price-box">
+                                  <span class="regular-price">
+                                    <span class="price">$120</span>
+                                  </span>
+                                </div>
+                              </div>
+                              <div class="pro-action">
+                                <button
+                                  type="button"
+                                  class="add-to-cart add-to-cart-btn"
+                                  data-id="14"
+                                >
+                                  <i class="fa fa-shopping-cart"></i>
+                                  <span> Add to Cart</span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="product-grid-area">
+                <ul class="products-grid">
+                  <li class="item col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                    <div class="product-item">
+                      <div class="item-inner">
+                        <div class="product-thumbnail">
+                          <div class="icon-hot-label new-right">New</div>
+
+                          <div class="pr-img-area">
+                            <a
+                              title="PUMA x FIRST MILE Voyage Nitro Men’s"
+                              href="/vi/san-pham/15"
+                            >
+                              <figure>
+                                <img
+                                  class="first-img"
+                                  src="https://localhost:5001/user-content/4622ab1b-8275-4e17-9ae4-4eb5a647b072.jpg"
+                                  alt="HTML template"
+                                />
+                                <img
+                                  class="hover-img"
+                                  src="https://localhost:5001/user-content/a3f32ad1-f440-425c-9cab-4d206483ac08.jpg"
+                                  alt="HTML template"
+                                />
+                              </figure>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="item-info">
+                          <div class="info-inner">
+                            <div class="item-title">
+                              <a
+                                title="PUMA x FIRST MILE Voyage Nitro Men’s"
+                                href="/vi/san-pham/15"
+                                >PUMA x FIRST MILE Voyage Nitro Men’s
+                              </a>
+                            </div>
+                            <div class="item-content">
+                              <div class="item-price">
+                                <div class="price-box">
+                                  <span class="regular-price">
+                                    <span class="price">$130</span>
+                                  </span>
+                                </div>
+                              </div>
+                              <div class="pro-action">
+                                <button
+                                  type="button"
+                                  class="add-to-cart add-to-cart-btn"
+                                  data-id="15"
+                                >
+                                  <i class="fa fa-shopping-cart"></i>
+                                  <span> Add to Cart</span>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="pagination-area">
+                <ul class="pagination-menu">
+                  <li>
+                    <a class="active" href="#"
+                      >1 <span class="sr-only">(current)</span></a
+                    >
+                  </li>
+                  <li>
+                    <a title="Trang 2" href="./products2.html">2</a>
+                  </li>
+                  <li>
+                    <a title="2" href="./products2.html"
+                      ><i class="fa fa-angle-right"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="./products2.html">Last</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="newsletter" class="section" style="margin-top: 5rem"></div>
+    <!-- FOOTER -->
+    <footer class="container-fluid bg-dark py-5" id="footer">
+      <div class="footer-about">
+        <div class="logo-part">
+          <h6 class="footer__h4">HaoHao Store</h6>
+          <br />
+          <br />
+          <p>Facility 1: No. 142-146 Pham Phu Thu - Ward 4 - District 6</p>
+          <p>Facility 2: 205 Nguyen Xi, Ward 26, Binh Thanh</p>
+          <p>Phone: 028.7300.2266</p>
+          <p>Hotline: 0933.108.554 | 0971,294,545</p>
+        </div>
+      </div>
+      <div class="footer-address">
+        <h6 class="footer__h6">Address</h6>
+        <br />
+        <br />
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.873984461329!2d106.6420883144405!3d10.74419426272664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752e639bf01243%3A0x91e3ddf3263c7e5e!2zMTQyIFBo4bqhbSBQaMO6IFRo4bupLCBQaMaw4budbmcgNCwgUXXhuq1uIDYsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1614675996119!5m2!1svi!2s"
+          width="230"
+          height="200"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+      <div class="help-us">
+        <h6 class="footer__h6">Help us</h6>
+        <ul style="list-style-type: none; padding-left: 0">
+          <li style="margin-bottom: 10px"><a href="./index.html"> Home</a></li>
+        </ul>
+        <ul style="list-style-type: none; padding-left: 0">
+          <li>
+            <a
+              href="https://ngotrieuhao.github.io/portfoliohtmljs/?fbclid=IwAR0lCPcJpPBgzud_wi12KXrTQF3ooqZ31uEV8X6c9phUjd5ZnYn-W07CWMY"
+            >
+              Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="social-network">
+        <h6 class="footer__h6" style="width: 14rem">Social Network</h6>
+        <div class="social">
+          <a class="social__icons" href="https://www.facebook.com/ngotrieuhao/">
+            <i class="fab fa-facebook fa-2x"></i>
+          </a>
+          <a class="social__icons" href="https://www.instagram.com/haro.ngoo/">
+            <i class="fab fa-instagram fa-2x" style="margin-left: 5px"></i
+          ></a>
+          <a class="social__icons" href="https://twitter.com/ngotrieuhao">
+            <i class="fab fa-twitter-square fa-2x" style="margin-left: 5px"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

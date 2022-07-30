@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="./favicon.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/27d79cf26d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+  </head>
+  <body>
+    <!--=== HEADER === -->
+    <div id="header">
+      <!-- container -->
+      <div class="container">
+        <!-- row -->
+        <div class="row">
+          <!-- LOGO -->
+          <div class="col-md-3" id="header-logo">
+            <div class="header-logo">
+              <a href="/" class="logo">
+                <img
+                  class="header_logo--img"
+                  src="/images/horizontal.png"
+                  alt="logo store"
+                />
+              </a>
+            </div>
+          </div>
+          <!-- /LOGO -->
+          <!-- SEARCH BAR -->
+          <div class="col-md-6" id="header-search">
+            <div class="header-search">
+              <form>
+                <input
+                  type="text"
+                  name="keyword"
+                  class="input"
+                  placeholder="Search here"
+                  style="border-radius: 20px 0px 0px 20px"
+                />
+                <button type="submit" class="search-btn">Find</button>
+              </form>
+            </div>
+          </div>
+          <!-- /SEARCH BAR -->
+          <!-- ACCOUNT -->
+          <div class="col-md-3 clearfix">
+            <div class="header-ctn">
+              <!-- Cart -->
+              <div class="dropdown">
+                <a href="#">
+                  <i class="fa fa-shopping-cart"></i>
+                  <span>Cart</span>
+                  <div class="qty" id="lbl_number_of_items_header">0</div>
+                </a>
+              </div>
+            </div>
+            <!-- /Cart -->
+          </div>
+        </div>
+        <!-- /ACCOUNT -->
+      </div>
+      <!-- row -->
+    </div>
+
+    <!--=== HEADER === -->
+    <nav id="navigation">
+      <!-- container -->
+      <div class="container">
+        <!-- responsive-nav -->
+        <div id="responsive-nav">
+          <!-- NAV -->
+          <ul class="main-nav nav navbar-nav">
+            <li class="active" style="background-color: #3399ff">
+              <a href="./index.html">Homepage</a>
+            </li>
+            <li>
+              <a style="color: white" href="./products.html">Product</a>
+            </li>
+            <li>
+              <a
+                style="color: white"
+                href="https://ngotrieuhao.github.io/portfoliohtmljs/?fbclid=IwAR0lCPcJpPBgzud_wi12KXrTQF3ooqZ31uEV8X6c9phUjd5ZnYn-W07CWMY"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a style="color: white" href="./promotion.html">Promotion</a>
+            </li>
+          </ul>
+
+          <ul class="main-nav nav navbar-nav" style="float: right">
+            <li><a style="color: white" href="#">Login</a></li>
+            <li>
+              <a style="color: white" href="./register.html">Register</a>
+            </li>
+          </ul>
+          <!-- /NAV -->
+        </div>
+        <!-- /responsive-nav -->
+      </div>
+      <!-- /container -->
+    </nav>
+
+    <div id="breadcrumb" class="section">
+      <!-- container -->
+      <div class="container">
+        <!-- row -->
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="breadcrumb-tree">
+              <li><a href="/">Homepage</a></li>
+              <li>Login</li>
+            </ul>
+          </div>
+        </div>
+        <!-- /row -->
+      </div>
+      <!-- /container -->
+    </div>
+
+    <div class="center">
+      <h1>Login</h1>
+      <form action="/vi/Login/Login" method="post">
+        <div class="txt_field" style="margin-top: 4rem">
+          <input
+            type="text"
+            class="form-control"
+            required=""
+            data-val="true"
+            data-val-required="Username cannot be empty"
+            id="UserName"
+            name="UserName"
+            value=""
+          />
+          <span
+            class="text-danger field-validation-valid"
+            data-valmsg-for="UserName"
+            data-valmsg-replace="true"
+          ></span>
+          <span></span>
+          <label for="emmail_login">UserName</label>
+        </div>
+
+        <div class="txt_field" style="margin-top: 4rem">
+          <input
+            type="password"
+            class="form-control"
+            required=""
+            data-val="true"
+            data-val-required="Password can not be empty"
+            id="Password"
+            name="Password"
+          />
+          <span
+            class="text-danger field-validation-valid"
+            data-valmsg-for="Password"
+            data-valmsg-replace="true"
+          ></span>
+          <span></span>
+          <label for="password_login">Password</label>
+        </div>
+        <div class="checkbox" style="font-size: 17px; margin-bottom: 1.5rem">
+          <label for="RememberMe">
+            <input
+              class="input_check"
+              type="checkbox"
+              data-val="true"
+              data-val-required="The RememberMe field is required."
+              id="RememberMe"
+              name="RememberMe"
+              value="true"
+            />
+            Remember me?
+          </label>
+        </div>
+
+        <div class="control-group">
+          <div class="controls">
+            <input class="button" type="submit" value="Login" />
+            <p class="forgot-pass">
+              <a href="./forgotpassword.html">Forgot your password?</a>
+            </p>
+            <div class="signup_link">
+              Not a member? <a href="./register.html">Signup</a>
+            </div>
+          </div>
+        </div>
+        <input name="RememberMe" type="hidden" value="false" />
+      </form>
+    </div>
+
+    <div id="newsletter" class="section" style="margin-top: 5rem"></div>
+    <!-- FOOTER -->
+    <footer class="container-fluid bg-dark py-5" id="footer">
+      <div class="footer-about">
+        <div class="logo-part">
+          <h6 class="footer__h4">HaoHao Store</h6>
+          <br />
+          <br />
+          <p>Facility 1: No. 142-146 Pham Phu Thu - Ward 4 - District 6</p>
+          <p>Facility 2: 205 Nguyen Xi, Ward 26, Binh Thanh</p>
+          <p>Phone: 028.7300.2266</p>
+          <p>Hotline: 0933.108.554 | 0971,294,545</p>
+        </div>
+      </div>
+      <div class="footer-address">
+        <h6 class="footer__h6">Address</h6>
+        <br />
+        <br />
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.873984461329!2d106.6420883144405!3d10.74419426272664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752e639bf01243%3A0x91e3ddf3263c7e5e!2zMTQyIFBo4bqhbSBQaMO6IFRo4bupLCBQaMaw4budbmcgNCwgUXXhuq1uIDYsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1614675996119!5m2!1svi!2s"
+          width="230"
+          height="200"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+      <div class="help-us">
+        <h6 class="footer__h6">Help us</h6>
+        <ul style="list-style-type: none; padding-left: 0">
+          <li style="margin-bottom: 10px"><a href="/"> Home</a></li>
+        </ul>
+        <ul style="list-style-type: none; padding-left: 0">
+          <li>
+            <a
+              href="https://ngotrieuhao.github.io/portfoliohtmljs/?fbclid=IwAR0lCPcJpPBgzud_wi12KXrTQF3ooqZ31uEV8X6c9phUjd5ZnYn-W07CWMY"
+            >
+              Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="social-network">
+        <h6 class="footer__h6" style="width: 14rem">Social Network</h6>
+        <div class="social">
+          <a class="social__icons" href="https://www.facebook.com/ngotrieuhao/">
+            <i class="fab fa-facebook fa-2x"></i>
+          </a>
+          <a class="social__icons" href="https://www.instagram.com/haro.ngoo/">
+            <i class="fab fa-instagram fa-2x" style="margin-left: 5px"></i
+          ></a>
+          <a class="social__icons" href="https://twitter.com/ngotrieuhao">
+            <i class="fab fa-twitter-square fa-2x" style="margin-left: 5px"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
