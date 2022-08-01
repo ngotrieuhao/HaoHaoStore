@@ -169,11 +169,16 @@
                                 >Hao20</span
                               >
                             </p>
-                            <ion-icon
-                              id="icon-copy1"
-                              name="copy-outline"
-                              class="icon__copy"
-                            ></ion-icon>
+                            <button onmouseout="outFunc1()" class="tooltip">
+                              <ion-icon
+                                id="icon-copy1"
+                                name="copy-outline"
+                                class="icon__copy"
+                              ></ion-icon>
+                              <span class="tooltiptext" id="myTooltip1">
+                                Click to copy
+                              </span>
+                            </button>
                           </div>
                           <div class="price-box">
                             <span class="regular-price"
@@ -218,11 +223,16 @@
                                 >Hao30</span
                               >
                             </p>
-                            <ion-icon
-                              id="icon-copy2"
-                              name="copy-outline"
-                              class="icon__copy"
-                            ></ion-icon>
+                            <button onmouseout="outFunc2()" class="tooltip">
+                              <ion-icon
+                                id="icon-copy2"
+                                name="copy-outline"
+                                class="icon__copy"
+                              ></ion-icon>
+                              <span class="tooltiptext" id="myTooltip2">
+                                Click to copy
+                              </span>
+                            </button>
                           </div>
                           <div class="price-box">
                             <span class="regular-price"
@@ -267,11 +277,16 @@
                                 >Hao15</span
                               >
                             </p>
-                            <ion-icon
-                              id="icon-copy3"
-                              name="copy-outline"
-                              class="icon__copy"
-                            ></ion-icon>
+                            <button onmouseout="outFunc3()" class="tooltip">
+                              <ion-icon
+                                id="icon-copy3"
+                                name="copy-outline"
+                                class="icon__copy"
+                              ></ion-icon>
+                              <span class="tooltiptext" id="myTooltip3">
+                                Click to copy
+                              </span>
+                            </button>
                           </div>
                           <div class="price-box">
                             <span class="regular-price"
@@ -358,6 +373,9 @@
       const content3 = document.getElementById("code3").textContent;
       await navigator.clipboard.writeText(content3);
       const copied3 = await navigator.clipboard.readText();
+
+      var tooltip3hover = document.getElementById("myTooltip3");
+      tooltip3hover.innerHTML = "Copied";
     });
 
     const copyIcon2 = document.getElementById("icon-copy2");
@@ -365,6 +383,9 @@
       const content2 = document.getElementById("code2").textContent;
       await navigator.clipboard.writeText(content2);
       const copied2 = await navigator.clipboard.readText();
+
+      var tooltip2hover = document.getElementById("myTooltip2");
+      tooltip2hover.innerHTML = "Copied";
     });
 
     const copyIcon1 = document.getElementById("icon-copy1");
@@ -372,6 +393,22 @@
       const content1 = document.getElementById("code1").textContent;
       await navigator.clipboard.writeText(content1);
       const copied1 = await navigator.clipboard.readText();
+
+      var tooltip1hover = document.getElementById("myTooltip1");
+      tooltip1hover.innerHTML = "Copied";
     });
+
+    function outFunc1() {
+      var tooltip1 = document.getElementById("myTooltip1");
+      tooltip1.innerHTML = "Click to copy";
+    }
+    function outFunc2() {
+      var tooltip2 = document.getElementById("myTooltip2");
+      tooltip2.innerHTML = "Click to copy";
+    }
+    function outFunc3() {
+      var tooltip3 = document.getElementById("myTooltip3");
+      tooltip3.innerHTML = "Click to copy";
+    }
   </script>
 </html>

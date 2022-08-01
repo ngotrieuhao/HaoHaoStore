@@ -681,7 +681,6 @@ p.badge.badge-pill.badge-success {
 }
 
 .icon__copy {
-  margin-top: 8px;
   padding: 5px;
   border: 1px solid var(--third-color);
   border-radius: 8px;
@@ -695,7 +694,44 @@ p.badge.badge-pill.badge-success {
 ion-icon.icon__copy.md.hydrated:hover {
   border: 1px solid lightgray;
 }
+.tooltip {
+  position: relative;
+  display: inline-block;
+  opacity: 1;
+  background: transparent;
+  border: none;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 110%;
+  left: 120%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
 
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
 /* RESPONSIVE MOBILE */
 @media only screen and (max-width: 46.1875rem) {
   p.badge.badge-pill.badge-success {
@@ -705,10 +741,14 @@ ion-icon.icon__copy.md.hydrated:hover {
   }
   .icon__copy {
     transform: scale(1.3);
-    margin-top: 3px;
-    padding: 4px;
+    position: relative;
+    top: -2px;
   }
   .regular-price {
     font-size: 12px;
+  }
+  .tooltip .tooltiptext {
+    width: 70px;
+    left: 165%;
   }
 }
