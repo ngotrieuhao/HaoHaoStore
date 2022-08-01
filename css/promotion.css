@@ -741,14 +741,21 @@ ion-icon.icon__copy.md.hydrated:hover {
   }
   .icon__copy {
     transform: scale(1.3);
-    position: relative;
-    top: -2px;
   }
   .regular-price {
     font-size: 12px;
   }
   .tooltip .tooltiptext {
-    width: 70px;
+    width: 55px;
     left: 165%;
+  }
+  .tooltip {
+    margin-top: 2px;
+    width: 32.2px;
+    height: 31.2px;
+  }
+  .tooltip:hover .tooltiptext {
+    left: 195%;
+    bottom: 130%;
   }
 }
