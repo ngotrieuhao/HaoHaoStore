@@ -1685,6 +1685,7 @@ figure img {
     top: 0;
     width: 100%;
     grid-template-rows: none;
+    margin: 2rem 0;
   }
   .menu__product--previous {
     display: none;
@@ -1694,28 +1695,28 @@ figure img {
   }
   .menu__product--left {
     display: block;
-    width: 30px;
+    width: 10%;
     height: 35px;
     border: 1px solid #e4e7ed;
     background-color: #fff;
     border-radius: 50%;
     z-index: 22;
     transition: 0.2s all;
-    position: relative;
-    top: 8rem;
+    position: absolute;
+    top: 4rem;
   }
   .menu__product--right {
     display: block;
-    width: 30px;
+    width: 10%;
     height: 35px;
     border: 1px solid #e4e7ed;
     background-color: #fff;
     border-radius: 50%;
     z-index: 22;
     transition: 0.2s all;
-    position: relative;
-    bottom: 84px;
-    left: 36rem;
+    position: absolute;
+    right: 0;
+    top: 4rem;
   }
   .product__description {
     width: 100%;
